@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "test": "jest"
   },
   "husky": {
     "hooks": {

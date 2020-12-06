@@ -9,7 +9,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "semi": "error",
+    "semi": "off",
     "no-console": "error",
     "no-var": "error",
     "no-empty": "error",
