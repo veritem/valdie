@@ -1,4 +1,4 @@
-import { sum } from '../index'
+import { sum } from '../src/index'
 
 test('basic', () => {
   expect(sum()).toBe(0)
