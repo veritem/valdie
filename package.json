@@ -4,7 +4,8 @@
   "description": "JS Validator",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,14 @@
   },
   "homepage": "https://github.com/Rwanda-Coding-Academy/Valdie#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
     "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "typescript": "^4.1.2"
   }
 }
