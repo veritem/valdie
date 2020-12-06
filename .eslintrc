@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "semi": "off",
+    "no-console": "error",
+    "no-var": "error",
+    "no-empty": "error",
+    "no-invalid-regexp": "error",
+    "no-regex-spaces": "error",
+    "no-unreachable": "error",
+    "eqeqeq": "error",
+    "no-unused-expressions": "error",
+    "prettier/prettier": 2
+  }
+}
