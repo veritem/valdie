@@ -2,8 +2,10 @@
   "name": "valdie",
   "version": "1.0.0",
   "description": "JS Validator",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "compile": "tsc",
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts --fix",
     "test": "jest"
