@@ -14,8 +14,8 @@ describe('isEMail', () => {
   })
 
   it('check if email validator fails', () => {
-    expect(() => isEmail('hell')).toThrow(
-      new Error('hell is not a valid email')
+    expect(() => isEmail('hell@')).toThrow(
+      new Error('hell@ is not a valid email')
     )
   })
 })
