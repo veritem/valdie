@@ -1,3 +1,3 @@
 import isEmail from './lib/isEmail'
 
-export default { isEmail }
+export { isEmail }

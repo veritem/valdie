@@ -1,9 +1,5 @@
-import { sum } from '../src/index'
+import { isEmail } from '../src/index'
 
-test('basic', () => {
-  expect(sum()).toBe(0)
-})
-
-test('basic again', () => {
-  expect(sum(1, 2)).toBe(3)
+test('check for email validity', () => {
+  expect(isEmail('email@example.com')).toBeTruthy()
 })
