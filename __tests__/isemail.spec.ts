@@ -7,5 +7,5 @@ test('check for email validity', () => {
 })
 
 test('check if email validator fails', () => {
-  expect(() => isEmail('mmmm')).toThrow()
+  expect(() => isEmail('mmmm')).toThrow(new Error('mmmm is not a valid email'))
 })
