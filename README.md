@@ -1,2 +1,2 @@
 # Valdie
-JS Validator
+Ts/JS simple Validator

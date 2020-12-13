@@ -1,3 +1,3 @@
 export default function ErrorMessage(value: string, key: string): string {
-  return `${value} is not a ${key}`
+  throw new Error(`${value} is not a ${key}`)
 }
