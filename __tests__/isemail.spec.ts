@@ -12,4 +12,10 @@ describe('isEMail', () => {
       new Error('mmmm is not a valid email')
     )
   })
+
+  it('check if email validator fails', () => {
+    expect(() => isEmail('hell')).toThrow(
+      new Error('hell is not a valid email')
+    )
+  })
 })
