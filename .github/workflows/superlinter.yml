@@ -22,3 +22,7 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: 9317f777-9f40-4069-b788-0a3cd9afc460
