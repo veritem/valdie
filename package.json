@@ -6,13 +6,12 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts --fix",
     "test": "jest"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint"
+      "pre-commit": "npm run lint"
     }
   },
   "repository": {
