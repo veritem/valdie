@@ -1,7 +1,7 @@
 {
   "name": "valdie",
-  "version": "1.0.0",
-  "description": "JS Validator",
+  "version": "0.0.1",
+  "description": "JS/TS Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -18,8 +18,16 @@
     "type": "git",
     "url": "git+https://github.com/Rwanda-Coding-Academy/Valdie.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "validator",
+    "ts-validator",
+    "validation",
+    "js-validator"
+  ],
+  "author": [
+    "Makuza Mugabo Verite",
+    "Patrick Niyogitare"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rwanda-Coding-Academy/Valdie/issues"
