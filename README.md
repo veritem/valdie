@@ -2,7 +2,7 @@
 [![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml)
 
 
-A TypeScript and JavaScript Validation Library that just works you probably never knew you needed it. it is designed to work either on frontend with a js library or on backed any where as long as it runs in browser or node.
+A TypeScript and JavaScript Validation Library that just works you probably never knew you needed it. 
 
 
 Installation
