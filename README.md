@@ -18,7 +18,7 @@ uses
  
 import { isEmail } from "valdie"
 
-console.log(isEmail("test@test.com")) // returns false
+console.log(isEmail("test@test.com")) // returns true
 
 ```
 
