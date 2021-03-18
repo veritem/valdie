@@ -24,10 +24,7 @@
     "validation",
     "js-validator"
   ],
-  "author": [
-    "Makuza Mugabo Verite",
-    "Patrick Niyogitare"
-  ],
+  "author": "Makuza Mugabo Verite & Patrick Niyogitare",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rwanda-Coding-Academy/Valdie/issues"
