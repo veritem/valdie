@@ -1,6 +1,6 @@
 {
   "name": "valdie",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JS/TS Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
