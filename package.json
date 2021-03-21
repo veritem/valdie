@@ -1,7 +1,7 @@
 {
   "name": "valdie",
-  "version": "0.0.6",
-  "description": "JS/TS Validator that just works",
+  "version": "0.0.7",
+  "description": "Modern javaScript and typescript  Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
