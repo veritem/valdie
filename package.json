@@ -1,6 +1,6 @@
 {
   "name": "valdie",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "JS/TS Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
     "compile": "tsc",
     "lint": "eslint . --ext .ts --fix",
     "test": "jest",
-    "prepublish": "tsc"
+    "prepublishOnly": "tsc"
   },
   "husky": {
     "hooks": {
