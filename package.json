@@ -1,13 +1,14 @@
 {
   "name": "valdie",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JS/TS Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "lint": "eslint . --ext .ts --fix",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "tsc"
   },
   "husky": {
     "hooks": {
