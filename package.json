@@ -10,6 +10,9 @@
     "test": "jest",
     "prepublishOnly": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
