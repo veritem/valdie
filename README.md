@@ -2,7 +2,7 @@
 [![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml)
 
 
-A TypeScript and JavaScript Validation Library that just works you probably never knew you needed it. 
+A TypeScript and JavaScript Validation Library that just works you probably never knew you needed it.
 
 
 Installation
@@ -12,14 +12,13 @@ npm i valdie
 ```
 
 
-uses 
+uses
 
 ```javascript
- 
+
 import { isEmail } from "valdie"
 
 console.log(isEmail("test@test.com")) // returns true
-
 ```
 
 #### Licence

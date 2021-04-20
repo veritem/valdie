@@ -1,14 +1,18 @@
 {
   "name": "valdie",
-  "version": "0.0.1",
-  "description": "JS/TS Validator that just works",
+  "version": "0.0.8",
+  "description": "Modern javaScript and typescript  Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "lint": "eslint . --ext .ts --fix",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
@@ -24,10 +28,7 @@
     "validation",
     "js-validator"
   ],
-  "author": [
-    "Makuza Mugabo Verite",
-    "Patrick Niyogitare"
-  ],
+  "author": "Makuza Mugabo Verite & Patrick Niyogitare",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rwanda-Coding-Academy/Valdie/issues"
@@ -45,7 +46,7 @@
     "node-notifier": ">=8.0.1",
     "prettier": "^2.2.1",
     "ts-jest": "^26.4.4",
-    "typescript": "^4.1.2"
+    "typescript": "^4.2.3"
   },
   "dependencies": {},
   "prettier": {

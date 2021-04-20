@@ -1,5 +1,4 @@
-import isEmail from './lib/isEmail'
-import isString from './lib/isString'
-import isInteger from './lib/isInteger'
-
-export { isEmail, isString, isInteger }
+export { isEmail } from './isEmail'
+export { isString } from './isString'
+export { isURL } from './isUrl'
+export { isInteger } from './isInteger'
