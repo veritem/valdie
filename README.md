@@ -3,7 +3,10 @@
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
 
-A TypeScript and JavaScript Validation Library that just works you probably never knew you needed it.
+A TypeScript and JavaScript Validation Library that just works 🔨
+
+
+You probably never knew you needed it but here you go.
 
 
 Installation
