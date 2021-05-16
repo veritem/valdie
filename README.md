@@ -1,7 +1,5 @@
 ### Valdie
-[![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml)
-
-![npm](https://img.shields.io/npm/v/valdie.svg?style=flat-square)
+[![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml) ![npm](https://img.shields.io/npm/v/valdie.svg?style=flat-square)
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
 
