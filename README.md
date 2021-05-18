@@ -1,4 +1,4 @@
-### Valdie
+## Valdie
 [![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml) ![npm](https://img.shields.io/npm/v/valdie.svg?style=flat-square)
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
@@ -9,14 +9,14 @@ A TypeScript and JavaScript Validation Library that just works 🔨
 You probably never knew you needed it but here you go.
 
 
-Installation
+### Install
 
 ```bash
 npm i valdie
 ```
 
 
-uses
+### Getting started
 
 ```javascript
 
@@ -24,6 +24,7 @@ import { isEmail } from "valdie"
 
 console.log(isEmail("test@test.com")) // returns true
 ```
+
 
 #### Licence
 
