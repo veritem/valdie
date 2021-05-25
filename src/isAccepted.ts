@@ -1,5 +1,10 @@
 import ErrorMessage from './utils/Error'
 
+/**
+ * Check if value is accepted (true,yes,1 or on)
+ * @param {string | number | boolean} str value to be checked
+ * @returns {boolean} returns true if value is accepted
+ */
 export function isAccepted(str: string | number | boolean): boolean {
   let valid = false
 
