@@ -26,6 +26,23 @@ console.log(isEmail("test@test.com")) // returns true
 ```
 
 
+```javascript
+
+import { isInteger } from "valdie"
+
+console.log(isInteger(34)) // returns true
+```
+
+
+
+```javascript
+
+import { isString } from "valdie"
+
+console.log(isInteger("My cool string")) // returns true
+```
+
+
 #### Licence
 
 The project is under [MIT](https://github.com/Rwanda-Coding-Academy/Valdie/edit/main/README.md) Licence
