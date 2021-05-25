@@ -4,7 +4,7 @@ import ErrorMessage from './utils/Error'
 const telRegex =
   /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i
 
-export function isTel(str: string): boolean {
-  if (!telRegex.test(str)) ErrorMessage(str, 'tel')
+export function isTel(value: string): boolean {
+  if (!telRegex.test(value)) ErrorMessage(value, 'tel')
   return true
 }

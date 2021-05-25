@@ -8,7 +8,7 @@ const regex = new RegExp(
 )
 
 //returns the url
-export function isURL(url_str: string): boolean {
-  if (!url_str.match(regex)) ErrorMessage(url_str, 'email')
+export function isURL(value: string): boolean {
+  if (!value.match(regex)) ErrorMessage(value, 'email')
   return true
 }

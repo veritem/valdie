@@ -6,10 +6,10 @@ const emailRegex =
 
 /**
  * Check if value is valid email address
- * @param str value to check
+ * @param value value to check
  * @returns true if value is valid
  */
-export function isEmail(str: string): boolean {
-  if (!emailRegex.test(str)) ErrorMessage(str, 'email')
+export function isEmail(value: string): boolean {
+  if (!emailRegex.test(value)) ErrorMessage(value, 'email')
   return true
 }

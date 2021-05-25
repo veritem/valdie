@@ -2,17 +2,20 @@ import ErrorMessage from './utils/Error'
 
 /**
  * Check if value is accepted (true,yes,1 or on)
- * @param {string | number | boolean} str value to be checked
+ * @param {string | number | boolean} value value to be checked
  * @returns {boolean} returns true if value is accepted
  */
-export function isAccepted(str: string | number | boolean): boolean {
+export function isAccepted(value: string | number | boolean): boolean {
   let valid = false
 
-  if (typeof str === 'string' && (str === 'yes' || str === 'on' || str === '1'))
+  if (
+    typeof value === 'string' &&
+    (value === 'yes' || value === 'on' || value === '1')
+  )
     valid = true
-  if (typeof str === 'number' && str === 1) valid = true
+  if (typeof value === 'number' && value === 1) valid = true
 
-  if (typeof str === 'boolean' && str) valid = true
-  if (!valid) ErrorMessage(str, 'tel')
+  if (typeof value === 'boolean' && value) valid = true
+  if (!valid) ErrorMessage(value, 'tel')
   return true
 }
