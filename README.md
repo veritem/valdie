@@ -40,7 +40,7 @@ When validating a string
 
 import { isString } from "valdie"
 
-console.log(isInteger("My cool string")) // returns true
+console.log(isString("My cool string")) // returns true
 ```
 
 When validating a url
