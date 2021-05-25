@@ -18,6 +18,8 @@ npm i valdie
 
 ### Getting started
 
+When validating an email
+
 ```javascript
 
 import { isEmail } from "valdie"
@@ -25,6 +27,29 @@ import { isEmail } from "valdie"
 console.log(isEmail("test@test.com")) // returns true
 ```
 
+When validating an integer
+```javascript
+
+import { isInteger } from "valdie"
+
+console.log(isInteger(34)) // returns true
+```
+
+When validating a string
+```javascript
+
+import { isString } from "valdie"
+
+console.log(isString("My cool string")) // returns true
+```
+
+When validating a url
+```javascript
+
+import { isURL } from "valdie"
+
+console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
+```
 
 #### Licence
 
