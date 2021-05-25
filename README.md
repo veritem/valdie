@@ -27,7 +27,7 @@ import { isEmail } from "valdie"
 console.log(isEmail("test@test.com")) // returns true
 ```
 
-When validating an email
+When validating an integer
 ```javascript
 
 import { isInteger } from "valdie"
@@ -35,7 +35,7 @@ import { isInteger } from "valdie"
 console.log(isInteger(34)) // returns true
 ```
 
-When validating an email
+When validating a string
 ```javascript
 
 import { isString } from "valdie"
