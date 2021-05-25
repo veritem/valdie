@@ -14,6 +14,11 @@ You probably never knew you needed it but here you go.
 ```bash
 npm i valdie
 ```
+or 
+
+```bash
+yarn add valdie
+```
 
 
 ### Getting started
@@ -24,31 +29,38 @@ When validating an email
 
 import { isEmail } from "valdie"
 
-console.log(isEmail("test@test.com")) // returns true
+console.log(isEmail("test@test.com")) // true
 ```
 
-When validating an integer
+### API Reference
+**isEmail**
 ```javascript
-
-import { isInteger } from "valdie"
-
-console.log(isInteger(34)) // returns true
+console.log(isEmail("test@test.com")) // true
 ```
 
-When validating a string
+**isInteger**
 ```javascript
-
-import { isString } from "valdie"
-
-console.log(isString("My cool string")) // returns true
+console.log(isInteger(34)) // true
 ```
 
-When validating a url
+**isString**
 ```javascript
+console.log(isString("My cool string")) // true
+```
 
-import { isURL } from "valdie"
+**isUrl**
+```javascript
+console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // true
+```
 
-console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
+**isTel**
+```javascript
+console.log(isTel("+25 078 044 9380") // true
+```
+
+**isAccepted** : checks whether value is truthfull value , allowed truthful values are `yes`, `on`, `true` and `1`
+```javascript
+console.log(isAccepted("yes") // true
 ```
 
 #### Licence
