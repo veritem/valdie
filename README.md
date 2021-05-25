@@ -43,6 +43,13 @@ import { isString } from "valdie"
 console.log(isInteger("My cool string")) // returns true
 ```
 
+When validating a url
+```javascript
+
+import { isURL } from "valdie"
+
+console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
+```
 
 #### Licence
 
