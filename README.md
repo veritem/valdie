@@ -9,7 +9,7 @@ A TypeScript and JavaScript Validation Library that just works 🔨
 You probably never knew you needed it but here you go.
 
 
-### Install
+### Getting started
 
 ```bash
 npm i valdie
