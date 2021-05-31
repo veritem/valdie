@@ -15,10 +15,28 @@ You probably never knew you needed it but here you go.
 npm i valdie
 ```
 
+or 
 
-### Getting started
+```bash
+yarn add valdie
+```
 
-When validating an email
+or 
+
+```bash
+pnpm install valdie
+```
+
+
+### Documentation
+
+1. <a href="#isemail">`isEmail`</a>
+2. <a href="#isInteger">`isInteger`</a>
+3. <a href="#isString">`isString`</a>
+4. <a href="#isURL">`isURL`</a>
+
+
+### isEmail
 
 ```javascript
 
@@ -27,15 +45,18 @@ import { isEmail } from "valdie"
 console.log(isEmail("test@test.com")) // returns true
 ```
 
-When validating an integer
+### isInteger
+
 ```javascript
 
 import { isInteger } from "valdie"
 
 console.log(isInteger(34)) // returns true
+
 ```
 
-When validating a string
+### isString
+
 ```javascript
 
 import { isString } from "valdie"
@@ -43,14 +64,20 @@ import { isString } from "valdie"
 console.log(isString("My cool string")) // returns true
 ```
 
-When validating a url
+### isURL
+
 ```javascript
 
 import { isURL } from "valdie"
 
 console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
 ```
+## Mentainers
+
+- [@makuzaverite](https://github.com/makuzaverite)
+- [@PatrickNiyogitare28](https://github.com/PatrickNiyogitare28)
 
 #### Licence
 
-The project is under [MIT](https://github.com/Rwanda-Coding-Academy/Valdie/edit/main/README.md) Licence
+The project is under [MIT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/LICENSE) When validating a url
+) Licence
