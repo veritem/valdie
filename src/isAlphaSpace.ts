@@ -8,7 +8,7 @@ const alphaRegex = /^([a-zA-Z\s]+)$/i
  * @param value value to check
  * @returns true if value is valid
  */
-export function isAlphaWithSpace(value: string): boolean {
+export function isAlphaSpace(value: string): boolean {
   if (!alphaRegex.test(value)) ErrorMessage(value, 'alphaWithSpace')
   return true
 }
