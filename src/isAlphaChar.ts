@@ -8,8 +8,9 @@ import ErrorMessage from './utils/Error'
  */
 export function isAlphaChar(value: string, separator = '-'): boolean {
   /* eslint-disable no-useless-escape */
-  const alphaRegex = new RegExp('^([a-zA-Z\\' + separator + ']+)$', 'i')
+  const alphaCharRegex = new RegExp('^([a-zA-Z\\' + separator + ']+)$', 'i')
 
-  if (!alphaRegex.test(value)) ErrorMessage(value, `alphaChar ${separator} `)
+  if (!alphaCharRegex.test(value))
+    ErrorMessage(value, `alphaChar ${separator} `)
   return true
 }
