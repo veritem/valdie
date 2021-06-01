@@ -72,7 +72,7 @@ import { isURL } from "valdie"
 
 console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
 ```
-## Maintainer
+## Maintainers
 
 - [@makuzaverite](https://github.com/makuzaverite)
 - [@PatrickNiyogitare28](https://github.com/PatrickNiyogitare28)
