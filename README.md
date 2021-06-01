@@ -79,5 +79,4 @@ console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns
 
 #### Licence
 
-The project is under [MIT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/LICENSE) When validating a url
-) Licence
+The project is under [MIT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/LICENSE) Licence
