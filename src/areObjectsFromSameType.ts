@@ -1,9 +1,13 @@
+import isObject from './isObject'
 import ErrorMessage from './utils/Error'
 
 export default function areObjectsFromSameType(
   object1: any,
   object2: any
 ): boolean {
+
+  if(!(isObject(object1)) && ! isObject(object2)) return false
+
   const keys1 = Object.entries(object1)
 
   const keys2 = Object.entries(object2)
