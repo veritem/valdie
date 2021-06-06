@@ -22,3 +22,13 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
+
+  Release: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 50
+    - uses: fregante/release-with-changelog@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
