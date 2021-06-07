@@ -102,4 +102,4 @@ Bear in mind this when altering and/or extending the sources.
 
 ## Contributor Code of Conduct
 
-[Code of Conduct](CONTRIBUTOR_CONVENANT.md) is adapted from [Contributor Covenant, version 2.0](http://contributor-covenant.org/version/2/0)
+[Code of Conduct](CONTRIBUTOR_COVENANT.md) is adapted from [Contributor Covenant, version 2.0](http://contributor-covenant.org/version/2/0)
