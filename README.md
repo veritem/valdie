@@ -73,6 +73,13 @@ import { isURL } from "valdie"
 
 console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
 ```
+
+## For contributors
+ Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTOR_COVENANT.md)) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTING.md)
+
+ To easy the review, kindly describe your PR. You can find the PR description templete in our[CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTOR_COVENANT.md)
+
+
 ## Maintainers
 
 - [@makuzaverite](https://github.com/makuzaverite)
