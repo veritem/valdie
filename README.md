@@ -82,7 +82,7 @@ console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns
 
 ## Maintainers
 
-- [@makuzaverite](https://github.com/makuzaverite)
+- [@veritem](https://github.com/veritem)
 - [@PatrickNiyogitare28](https://github.com/PatrickNiyogitare28)
 
 #### Licence
