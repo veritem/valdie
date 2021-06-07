@@ -75,6 +75,9 @@ console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns
 ```
 
 ## For contributors
+ Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_CONVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTOR_CONVENANT.md)) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTING.md)
+
+ To easy the review, kindly describe your PR. You can find the PR description templete in our[CONTRIBUTOR_CONVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/CONTRIBUTOR_CONVENANT.md)
 
 
 ## Maintainers
