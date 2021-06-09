@@ -1,4 +1,4 @@
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
 
 /**
  * Check if value is valid array type

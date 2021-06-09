@@ -1,4 +1,4 @@
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
 
 /* eslint-disable no-useless-escape */
 const alphaNumRegex = /^([a-zA-Z\d]+)$/i
