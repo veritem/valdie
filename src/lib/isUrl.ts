@@ -1,6 +1,6 @@
 //TODO: add function to validate for urls
 
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
 
 /* eslint-disable */
 const regex = new RegExp(

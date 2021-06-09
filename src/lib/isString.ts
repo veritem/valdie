@@ -1,4 +1,4 @@
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
 
 //TODO:  function to check if the passed string is a string
 /**
