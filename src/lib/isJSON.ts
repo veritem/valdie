@@ -5,13 +5,13 @@ import ErrorMessage from '../utils/Error'
  * @param value value to check
  * @returns true when value is a json
  */
-export function isJSON(value: string): boolean {
-  if (typeof value !== 'string') {
-    ErrorMessage(value, 'json')
-    return false
-  }
+export function isJSON(
+  value: string | unknown[] | Record<string, unknown>
+): boolean {
+  if (typeof value === 'object') return true
+  if (Number(value)) ErrorMessage(value, 'json')
   try {
-    const result = JSON.parse(value)
+    const result = JSON.parse(value as string)
     const type = Object.prototype.toString.call(result)
     return type === '[object Object]' || type === '[object Array]'
   } catch (err) {
