@@ -1,4 +1,4 @@
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
 
 /**
  * Check if value is accepted (true,yes,1 or on)
