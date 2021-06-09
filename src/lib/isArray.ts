@@ -5,10 +5,11 @@ import ErrorMessage from '../utils/Error'
  * @param value value to check
  * @returns true if value is valid
  */
-export function isArray(value: string): boolean {
+export function isArray(value: string | [] | Record<string, unknown>): boolean {
   try {
-    const testVal = JSON.stringify(value)
+    if (typeof value === 'object') return Array.isArray(value)
 
+    const testVal = JSON.parse(value as string)
     return Array.isArray(testVal) ? true : false
   } catch (e) {
     ErrorMessage(value, 'array')
