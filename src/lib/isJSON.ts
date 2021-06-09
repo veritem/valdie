@@ -1,5 +1,10 @@
 import ErrorMessage from '../utils/Error'
 
+/**
+ * check if value is json
+ * @param value value to check
+ * @returns true when value is a json
+ */
 export function isJSON(value: string): boolean {
   if (typeof value !== 'string') {
     ErrorMessage(value, 'json')
