@@ -1,5 +1,4 @@
 //TODO: add function to validate for urls
-
 import ErrorMessage from '../utils/Error'
 
 /* eslint-disable */
