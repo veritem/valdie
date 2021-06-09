@@ -5,7 +5,9 @@ import ErrorMessage from '../utils/Error'
  * @param value value to check
  * @returns true if value is valid
  */
-export function isArray(value: string | [] | Record<string, unknown>): boolean {
+export function isArray(
+  value: string | unknown[] | Record<string, unknown>
+): boolean {
   try {
     if (typeof value === 'object') return Array.isArray(value)
 
