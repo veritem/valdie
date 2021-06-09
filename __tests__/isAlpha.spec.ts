@@ -5,6 +5,8 @@ describe('isAlpha', () => {
     expect(isAlpha('email')).toBeTruthy()
     expect(isAlpha('examplecom')).toBeTruthy()
     expect(isAlpha('emailcom')).toBeTruthy()
+    expect(isAlpha('ema-ilcom', '-')).toBeTruthy()
+    expect(isAlpha('em,ail,com', ',')).toBeTruthy()
   })
 
   it('check if alpha validator fails', () => {
