@@ -6,7 +6,7 @@ import ErrorMessage from '../utils/Error'
  * @param separator any string separator
  * @returns true if value is valid
  */
-const alphaCharRegex = /^([a-zA-Z]+[!@#$%^&*(),.?":{}|<>_~`[\];]+)$/
+const alphaCharRegex = /(^[a-zA-Z!@#$%^&*(),.?":{}|<>_~`[\];]+)$/
 
 export function isAlphaChar(value: string): boolean {
   /* eslint-disable no-useless-escape */
