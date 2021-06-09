@@ -17,6 +17,6 @@ export function isBoolean(value: string | boolean | number): boolean {
     v === '0'
   )
     return true
-  else ErrorMessage(value, 'array')
+  else ErrorMessage(value, 'boolean')
   return false
 }
