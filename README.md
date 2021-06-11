@@ -1,5 +1,6 @@
 ## Valdie
-[![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/superlinter.yml) ![npm](https://img.shields.io/npm/v/valdie.svg?style=flat-square)
+[![CI](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/ci.yml/badge.svg)](https://github.com/Rwanda-Coding-Academy/Valdie/actions/workflows/ci.yml)
+![npm](https://img.shields.io/npm/v/valdie.svg?style=flat-square)
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
 
@@ -72,9 +73,16 @@ import { isURL } from "valdie"
 
 console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
 ```
+
+## For contributors
+ Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
+
+ To easy the review, kindly describe your PR. You can find the PR description templete in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md)
+
+
 ## Maintainers
 
-- [@makuzaverite](https://github.com/makuzaverite)
+- [@veritem](https://github.com/veritem)
 - [@PatrickNiyogitare28](https://github.com/PatrickNiyogitare28)
 
 #### Licence

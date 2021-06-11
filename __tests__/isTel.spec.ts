@@ -1,4 +1,4 @@
-import { isTel } from '../src/index'
+import { isTel } from '../src'
 
 describe('isTel', () => {
   it('check for tel validity', () => {

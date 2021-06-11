@@ -1,5 +1,4 @@
 import isObject from './isObject'
-import ErrorMessage from './utils/Error'
 
 export default function areObjectsFromSameType(
   object1: any,
