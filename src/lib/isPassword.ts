@@ -32,10 +32,45 @@ const score = (str: string): number => {
   return score
 }
 
-export function isPassword(str: string, strength: PASSWORDS): boolean {
-  if (strength == PASSWORDS.TOO_WEAK) {
-    if (score(str) >= PASSWORD_SCORE[0])
-      ErrorMessage(str, `${strength.toString()} password`)
+
+/**
+ * Validates a given str to a given PASSWORD strength
+ * @param str Password to check
+ * @param type Password Strength Variation
+ * @returns 
+ */
+export function isPassword(str: string, type: PASSWORDS=PASSWORDS.MEDIUM): boolean {
+
+  switch (type) {
+    case PASSWORDS.TOO_WEAK:
+      if (score(str) <= PASSWORD_SCORE[0])
+        ErrorMessage(str, `${type.toString()} password`)
+      break;
+
+    case PASSWORDS.WEAK:
+      if (score(str) <= PASSWORD_SCORE[1])
+        ErrorMessage(str, `${type.toString()} password`)
+      break;
+  
+    case PASSWORDS.MEDIUM:
+      if (score(str) <= PASSWORD_SCORE[2])
+        ErrorMessage(str, `${type.toString()} password`)
+      break;
+
+    case PASSWORDS.STRONG:
+      if (score(str) <= PASSWORD_SCORE[3])
+        ErrorMessage(str, `${type.toString()} password`)
+      break;
+    
+        
+    case PASSWORDS.VERY_STRONG:
+      if (score(str) <= PASSWORD_SCORE[4])
+        ErrorMessage(str, `${type.toString()} password`)
+        break;
+    
+  
+    default:
+      break;
   }
-  return true;
+  return true
 }
