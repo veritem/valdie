@@ -34,8 +34,8 @@ const score = (str: string): number => {
 
 export function isPassword(str: string, strength: PASSWORDS): boolean {
   if (strength == PASSWORDS.TOO_WEAK) {
-    if (score(str) >= PASSWORD_SCORE[3])
+    if (score(str) >= PASSWORD_SCORE[0])
       ErrorMessage(str, `${strength.toString()} password`)
   }
-  return true
+  return true;
 }
