@@ -1,3 +1,0 @@
-export enum PASSWORDS {
-    TOO_WEAK, WEAK, MEDIUM, STRONG, VERY_STRONG 
-}

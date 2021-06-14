@@ -1,4 +1,5 @@
-import ErrorMessage from './utils/Error'
+import ErrorMessage from '../utils/Error'
+import { PASSWORDS, PASSWORD_SCORE } from '../enums/EPasswords'
 
 const score = (str: string): number => {
   let score = 0
@@ -29,4 +30,12 @@ const score = (str: string): number => {
   score += (variationCount - 1) * 10
 
   return score
+}
+
+export function isPassword(str: string, strength: PASSWORDS): boolean {
+  if (strength == PASSWORDS.TOO_WEAK) {
+    if (score(str) >= PASSWORD_SCORE[3])
+      ErrorMessage(str, `${strength.toString()} password`)
+  }
+  return true
 }
