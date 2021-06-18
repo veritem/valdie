@@ -11,7 +11,7 @@ export function isJSON(
   if (typeof value === 'object') return true
   if (Number(value)) ErrorMessage(value, 'json')
   try {
-    const result = JSON.parse(value as string)
+    const result = JSON.parse(String(value))
     const type = Object.prototype.toString.call(result)
     return type === '[object Object]' || type === '[object Array]'
   } catch (err) {

@@ -1,3 +1,4 @@
+import { _a } from '../utils/methods'
 import ErrorMessage from '../utils/Error'
 
 /**
@@ -9,10 +10,10 @@ export function isArray(
   value: string | unknown[] | Record<string, unknown>
 ): boolean {
   try {
-    if (typeof value === 'object') return Array.isArray(value)
+    if (typeof value === 'object') return _a(value)
 
-    const testVal = JSON.parse(value as string)
-    return Array.isArray(testVal) ? true : false
+    const testVal = JSON.parse(String(value))
+    return _a(testVal) ? true : false
   } catch (e) {
     ErrorMessage(value, 'array')
   }
