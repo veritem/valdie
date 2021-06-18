@@ -13,3 +13,13 @@ export function purifyStringObject(stringObject: string): string {
     return '"' + s.substring(0, s.length - 1) + '":'
   })
 }
+
+/**
+ * Function to trim any string
+ * @param value value to trim
+ * @param withSpace default: true, true when you want your string to have only one space or false when you want your string to have no space
+ * @returns trimed string
+ */
+export function trim(value: string, withSpace = true): string {
+  return withSpace ? value.replace(/\s+/g, ' ') : value.replace(/\s+/g, '')
+}
