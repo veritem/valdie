@@ -23,3 +23,12 @@ export function purifyStringObject(stringObject: string): string {
 export function trim(value: string, withSpace = true): string {
   return withSpace ? value.replace(/\s+/g, ' ') : value.replace(/\s+/g, '')
 }
+
+/**
+ * Minified Array.isArray()
+ * @param arrTest value to test
+ * @returns truen when is array according to Array.isArray
+ */
+export function _a(arrTest: unknown | unknown[]): boolean {
+  return Array.isArray(arrTest)
+}
