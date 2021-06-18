@@ -1,21 +1,27 @@
-import isObject from './isObject'
+import { isObject } from './isObject'
 
-export default function areObjectsFromSameType(
-  object1: any,
-  object2: any
+/**
+ * Check if objects are of same types or are the same
+ * @param obj1 object 1
+ * @param obj2 object 2
+ * @returns true when they are the same, false when they aren't
+ */
+export function areObjectsFromSameType(
+  obj1: Record<string, unknown>,
+  obj2: Record<string, unknown>
 ): boolean {
-  if (!isObject(object1) && !isObject(object2)) return false
+  if (!isObject(obj1) && !isObject(obj2)) return false
 
-  const keys1 = Object.entries(object1)
+  const k1 = Object.entries(obj1)
 
-  const keys2 = Object.entries(object2)
+  const k2 = Object.entries(obj2)
 
-  if (keys1.length !== keys2.length) {
+  if (k1.length !== k2.length) {
     return false
   }
 
-  for (const key in keys1) {
-    if (object1[key] !== object2[key]) {
+  for (const key in k1) {
+    if (obj1[key] !== obj2[key]) {
       return false
     }
   }
