@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .ts --fix",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "prepare": "husky install"
   },
   "files": [
     "dist"
