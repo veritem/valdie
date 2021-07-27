@@ -19,5 +19,5 @@
     "eqeqeq": "error",
     "no-unused-expressions": "error",
     "prettier/prettier": 2
-  }
+}
 }

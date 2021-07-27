@@ -1,7 +1,7 @@
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
-/* eslint-disable no-useless-escape */
-export function isObjectEmpty(value: unknown[]): boolean {
-  if (!(Object.keys(value).length === 0)) ErrorMessage(value, 'empty object')
-  return true
+/* eslint-disable no-useless-escape  */
+export function isObjectEmpty(value: any): Response {
+  if (!(Object.keys(value).length === 0)) ErrorMessage(`${value} is empty`)
+  return SuccessMesage()
 }

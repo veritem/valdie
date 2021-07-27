@@ -1,7 +1,8 @@
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
-export default function isObject(value: unknown): boolean {
-  if (typeof value !== 'object' && value !== null) ErrorMessage(value, 'object')
+export default function isObject(value: unknown): Response {
+  if (typeof value !== 'object' && value !== null)
+    ErrorMessage(`${value} is not valid object`)
 
-  return true
+  return SuccessMesage()
 }

@@ -42,37 +42,13 @@ pnpm install valdie
 ```javascript
 
 import { isEmail } from "valdie"
+ 
 
-console.log(isEmail("test@test.com")) // returns true
-```
-
-### isInteger
-
-```javascript
-
-import { isInteger } from "valdie"
-
-console.log(isInteger(34)) // returns true
+let { message,success } = isEmail("test@gmail.com")
 
 ```
 
-### isString
 
-```javascript
-
-import { isString } from "valdie"
-
-console.log(isString("My cool string")) // returns true
-```
-
-### isURL
-
-```javascript
-
-import { isURL } from "valdie"
-
-console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
-```
 
 ## For contributors
  Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
