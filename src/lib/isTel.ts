@@ -5,6 +5,7 @@ const telRegex =
   /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i
 
 export function isTel (str: string): Response {
-  if (!telRegex.test(str)) ErrorMessage(`${str} is not a valid telephone`)
+  if (!telRegex.test(str))
+    return ErrorMessage(`${str} is not a valid telephone`)
   return SuccessMesage()
 }

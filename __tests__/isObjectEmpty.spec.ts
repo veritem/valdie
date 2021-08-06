@@ -13,7 +13,7 @@ describe("Test for object", () => {
         const obj = { name: "veritem" }
         const { message, success } = isObjectEmpty(obj)
 
-        expect(message).toEqual(`${Object} is not a valid object`)
+        expect(message).toEqual(`Object is not empty`)
         expect(success).toBeFalsy()
     })
 

@@ -8,8 +8,8 @@ describe('Test for integer values', () => {
   })
 
   it('should fail for no-integers', () => {
-    const { message, success } = isInteger(parseInt('asss', 10))
-    expect(message).toEqual('asss is not a valid intiger')
+    const { message, success } = isInteger('asskks')
+    expect(message).toEqual('asskks is not a valid integer')
     expect(success).toBeFalsy()
   })
 

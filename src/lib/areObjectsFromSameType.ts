@@ -1,6 +1,6 @@
 import isObject from './isObject'
 
-export default function areObjectsFromSameType(
+export default function areObjectsFromSameType (
   object1: any,
   object2: any
 ): boolean {
