@@ -1,13 +1,15 @@
 import { isString } from '../src'
 
 describe('is value a string', () => {
-  it('check if string is not valid', () => {
-    expect(() => isString(1)).toThrow(new Error('1 is not a valid string'))
+  it('should succes if its a valid string', () => {
+    const { message, success } = isString('hhhhhh')
+    expect(message).toBeUndefined()
+    expect(success).toBeTruthy()
   })
 
-  it('check when it is a valid string', () => {
-    expect(isString('maakaj')).toBeTruthy()
-    expect(isString('1221')).toBeTruthy()
-    expect(isString('dsjk')).toBeTruthy()
+  it('should fail if it not a valid string', () => {
+    const { message, success } = isString(11)
+    expect(message).toEqual(`11 is not a valid string`)
+    expect(success).toBeFalsy()
   })
 })

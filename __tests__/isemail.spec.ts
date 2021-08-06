@@ -1,21 +1,17 @@
 import { isEmail } from '../src/index'
 
-describe('isEMail', () => {
-  it('check for email validity', () => {
-    expect(isEmail('email@example.com')).toBeTruthy()
-    expect(isEmail('_______@example.com')).toBeTruthy()
-    expect(isEmail('email@example.com')).toBeTruthy()
+
+describe('Test email validator', () => {
+  it('should sussecced', () => {
+    const { message, success } = isEmail('email@example.com')
+    expect(message).toBeUndefined()
+    expect(success).toBeTruthy()
   })
 
-  it('check if email validator fails', () => {
-    expect(() => isEmail('mmmm')).toThrow(
-      new Error('mmmm is not a valid email')
-    )
-  })
-
-  it('check if email validator fails', () => {
-    expect(() => isEmail('hell@')).toThrow(
-      new Error('hell@ is not a valid email')
-    )
+  it('should fail', () => {
+    let email = "emailexample.com"
+    const { message, success } = isEmail(email)
+    expect(message).toEqual(`${email} is not valid email`)
+    expect(success).toBeFalsy()
   })
 })

@@ -1,21 +1,28 @@
 import { isInteger } from '../src'
 
-describe('isInteger', () => {
-  it('should pass for integer value', () => {
-    expect(isInteger(1)).toBeTruthy()
+describe('Test for integer values', () => {
+  it('should pass for small integers', () => {
+    const { message, success } = isInteger(1)
+    expect(message).toBeUndefined()
+    expect(success).toBeTruthy()
   })
 
-  it('should pass for big integer value', () => {
-    expect(isInteger(1340047646)).toBeTruthy()
+  it('should fail for no-integers', () => {
+    const { message, success } = isInteger(parseInt('asss', 10))
+    expect(message).toEqual('asss is not a valid intiger')
+    expect(success).toBeFalsy()
   })
 
-  it('should fail for decimals and floats', () => {
-    expect(() => isInteger(1.7374)).toThrow(
-      new Error('1.7374 is not a valid integer')
-    )
+  it('Should fail for decimal numbers', () => {
+    const { message, success } = isInteger(1.7374)
+    expect(message).toEqual('1.7374 is not a valid integer')
+    expect(success).toBeFalsy()
   })
 
-  it('should fail for invalid inputs', () => {
-    expect(() => isInteger((2 ^ 63) - 1)).not.toBe(true)
+  it('should pass for really long integers', () => {
+    const { message, success } = isInteger(2 ^ 63)
+
+    expect(message).toBeUndefined()
+    expect(success).toBeTruthy()
   })
 })
