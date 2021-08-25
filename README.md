@@ -16,16 +16,10 @@ You probably never knew you needed it but here you go.
 npm i valdie
 ```
 
-or 
+using deno
 
 ```bash
-yarn add valdie
-```
-
-or 
-
-```bash
-pnpm install valdie
+import valdie from 'https://cdn.skypack.dev/valdie'
 ```
 
 
