@@ -1,6 +1,6 @@
 {
   "name": "valdie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Modern javaScript and typescript  Validator that just works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,9 +12,7 @@
     "prepublishOnly": "tsc",
     "prepare": "husky install"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
@@ -24,12 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/Rwanda-Coding-Academy/Valdie.git"
   },
-  "keywords": [
-    "validator",
-    "ts-validator",
-    "validation",
-    "js-validator"
-  ],
+  "keywords": ["validator", "ts-validator", "validation", "js-validator"],
   "author": "Makuza Mugabo Verite & Patrick Niyogitare",
   "license": "MIT",
   "bugs": {
