@@ -35,7 +35,7 @@ import valdie from 'https://cdn.skypack.dev/valdie'
 4. <a href="#isURL">`isURL`</a>
 
 
-### isEmail
+### They are two ways of consuming our api
 
 ```javascript
 
@@ -46,13 +46,19 @@ let { message,success } = isEmail("test@gmail.com")
 
 ```
 
-Api also supports chaining validators
-
 ```javascript
 
 import validator from "valdie"
 
 let { message,success } = validator("mystring").isString().isEmail()
+```
+
+Using builder method
+
+
+```javascript
+import validator from "valdie"
+let {message,success} = valdie(20).isURL().isTel().validate()
 ```
 
 ## For contributors
