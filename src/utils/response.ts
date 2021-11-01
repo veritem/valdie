@@ -1,5 +1,5 @@
 export interface Response {
-  message?: string
+  message?: string | string[]
   success: boolean
 }
 
