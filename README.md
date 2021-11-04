@@ -4,7 +4,11 @@
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
 
-A TypeScript and JavaScript Validation Library that just works 🔨
+A TypeScript and JavaScript Validation Library that  works 🔨
+    - It doesn't use any libraries 🎉
+    - It's easy to use 💪
+    - It's easy to extend 📦
+
 
 
 You probably never knew you needed it but here you go.
@@ -21,16 +25,10 @@ or
 yarn add valdie
 ```
 
-or 
+using deno
 
 ```bash
-yarn add valdie
-```
-
-or 
-
-```bash
-pnpm install valdie
+import valdie from 'https://cdn.skypack.dev/valdie'
 ```
 
 
@@ -42,7 +40,7 @@ pnpm install valdie
 4. <a href="#isURL">`isURL`</a>
 
 
-### isEmail
+### They are two ways of consuming our api
 
 ```javascript
 
@@ -53,45 +51,31 @@ console.log(isEmail("test@test.com")) // true
 
 ### isInteger
 
-```javascript
-
-import { isInteger } from "valdie"
-
-console.log(isInteger(34)) // returns true
+let { message,success } = isEmail("test@gmail.com")
 
 ```
-
-### isString
 
 ```javascript
 console.log(isInteger(34)) // true
 ```
 
-**isString**
-```javascript
-console.log(isString("My cool string")) // true
+import validator from "valdie"
+
+let { message,success } = validator("mystring").isString().isEmail()
 ```
 
-### isURL
+Using builder method
+
 
 ```javascript
-console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // true
-```
-
-**isTel**
-```javascript
-console.log(isTel("+25 078 044 9380") // true
-```
-
-**isAccepted** : checks whether value is truthfull value , allowed truthful values are `yes`, `on`, `true` and `1`
-```javascript
-console.log(isAccepted("yes") // true
+import validator from "valdie"
+let {message,success} = valdie(20).isURL().isTel().validate()
 ```
 
 ## For contributors
- Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
+ Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue  to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
 
- To easy the review, kindly describe your PR. You can find the PR description templete in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md)
+ To easy the review, describe your PR. You can find the PR description templete in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md)
 
 
 ## Maintainers

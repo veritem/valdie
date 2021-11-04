@@ -1,5 +1,4 @@
-//TODO: add function to validate for urls
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
 /* eslint-disable */
 const regex = new RegExp(
@@ -7,12 +6,8 @@ const regex = new RegExp(
 )
 
 //returns the url
-/**
- * Check if value is a valid url
- * @param value value to check
- * @returns true iv value is valid
- */
-export function isURL(value: string): boolean {
-  if (!value.match(regex)) ErrorMessage(value, 'email')
-  return true
+export function isURL (url_str: string): Response {
+  if (!url_str.match(regex))
+    return ErrorMessage(`${url_str} is not a valid url`)
+  return SuccessMesage()
 }

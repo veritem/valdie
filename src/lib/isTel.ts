@@ -1,15 +1,11 @@
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
 /* eslint-disable no-useless-escape */
 const telRegex =
   /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i
 
-/**
- * Check if value is valid telephone number
- * @param value value to check
- * @returns true if value is valid
- */
-export function isTel(value: string): boolean {
-  if (!telRegex.test(value)) ErrorMessage(value, 'tel')
-  return true
+export function isTel(str: string): Response {
+  if (!telRegex.test(str))
+    return ErrorMessage(`${str} is not a valid telephone`)
+  return SuccessMesage()
 }

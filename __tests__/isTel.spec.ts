@@ -1,9 +1,15 @@
 import { isTel } from '../src'
 
-describe('isTel', () => {
-  it('check for tel validity', () => {
-    expect(isTel('+25 078 044 9380')).toBeTruthy()
-    expect(isTel('078 044 9389')).toBeTruthy()
-    expect(isTel('0780449389')).toBeTruthy()
+describe('Test for telephone validity', () => {
+  it('Should pass for valid telephones', () => {
+    const { message, success } = isTel('0780449389')
+    expect(message).toBeUndefined()
+    expect(success).toBeTruthy()
+  })
+
+  it('should fail for invalid phones', () => {
+    const { message, success } = isTel('msmk')
+    expect(message).toEqual(`msmk is not a valid telephone`)
+    expect(success).toBeFalsy()
   })
 })

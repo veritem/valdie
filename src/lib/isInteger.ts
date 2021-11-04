@@ -1,12 +1,8 @@
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
 /* eslint-disable no-useless-escape */
-/**
- * Check if value is valid integer
- * @param value value to check
- * @returns true if value is valid
- */
-export function isInteger(value: number): boolean {
-  if (!Number.isInteger(value)) ErrorMessage(value, 'integer')
-  return true
+export function isInteger(value: any): Response {
+  if (!Number.isInteger(value))
+    return ErrorMessage(`${value} is not a valid integer`)
+  return SuccessMesage()
 }

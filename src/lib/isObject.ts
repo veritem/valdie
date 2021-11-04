@@ -1,34 +1,8 @@
-import { _a, purifyStringObject } from '../utils/methods'
-import ErrorMessage from '../utils/Error'
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 
-/**
- * Function to check if value is object
- * @param value value to be checked
- * @returns true when value is an object
- */
-export function isObject(value: unknown): boolean {
-  const stringVal = purifyStringObject(String(value))
+export default function isObject(value: unknown): Response {
+  if (typeof value !== 'object' && value !== null)
+    ErrorMessage(`${value} is not valid object`)
 
-  //convert to number if possible to avoid confustions to something like '123' which could be treated as string
-  value = isNaN(Number(value)) ? value : Number(value)
-
-  //if value is not a string or object then throw a message
-  if (typeof value !== 'string' && typeof value !== 'object')
-    ErrorMessage(value, 'object')
-
-  try {
-    //if value is type object and is array then throw a message
-    if (typeof value === 'object' && _a(value)) ErrorMessage(value, 'object')
-    //if object is type string parse it to JSON and see if it can be parsed
-    else if (typeof value === 'string') {
-      const testVal = JSON.parse(stringVal)
-
-      // if parsed value is array then it is not an object we want so we have to throw
-      if (_a(testVal)) ErrorMessage(value, 'object')
-    }
-  } catch (e) {
-    ErrorMessage(value, 'object')
-  }
-
-  return true
+  return SuccessMesage()
 }
