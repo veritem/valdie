@@ -6,7 +6,7 @@ const regex = new RegExp(
 )
 
 //returns the url
-export function isURL (url_str: string): Response {
+export  function isURL (url_str: string): Response {
   if (!url_str.match(regex))
     return ErrorMessage(`${url_str} is not a valid url`)
   return SuccessMesage()

@@ -19,6 +19,11 @@ You probably never knew you needed it but here you go.
 ```bash
 npm i valdie
 ```
+or 
+
+```bash
+yarn add valdie
+```
 
 using deno
 
@@ -41,12 +46,18 @@ import valdie from 'https://cdn.skypack.dev/valdie'
 
 import { isEmail } from "valdie"
 
+console.log(isEmail("test@test.com")) // true
+```
+
+### isInteger
 
 let { message,success } = isEmail("test@gmail.com")
 
 ```
 
 ```javascript
+console.log(isInteger(34)) // true
+```
 
 import validator from "valdie"
 
