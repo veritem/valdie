@@ -8,14 +8,15 @@
     "strict": true,
     "baseUrl": ".",
     "alwaysStrict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "declaration": true,
     "lib": ["es2017", "es7", "es6", "dom"],
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true 
   },
   "include": ["src/**/*"]
 }
