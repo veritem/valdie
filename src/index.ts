@@ -9,44 +9,42 @@ import { TEL_REGEX, URL_REGEX } from './utils/constants'
 import { Response } from './utils/response'
 
 class Validie {
-    #validation_string: any
-    message: string[] = []
-    success = false
+  #validation_string: any
+  message: string[] = []
+  success = false
 
-    constructor(to_be_validated: unknown) {
-        this.#validation_string = to_be_validated
-    }
+  constructor(to_be_validated: unknown) {
+    this.#validation_string = to_be_validated
+  }
 
-    isURL() {
-        if (!String(this.#validation_string).match(URL_REGEX)) {
-            this.#response('URL')
-        }
-        return this
+  isURL() {
+    if (!String(this.#validation_string).match(URL_REGEX)) {
+      this.#response('URL')
     }
+    return this
+  }
 
-    isTel() {
-        if (!String(this.#validation_string).match(TEL_REGEX)) {
-            this.#response('telephone')
-        }
-        return this
+  isTel() {
+    if (!String(this.#validation_string).match(TEL_REGEX)) {
+      this.#response('telephone')
     }
-    isString() {
-        if (typeof this.#validation_string !== 'string') {
-            this.#response('string')
-        }
-        return this
+    return this
+  }
+  isString() {
+    if (typeof this.#validation_string !== 'string') {
+      this.#response('string')
     }
+    return this
+  }
 
-    #response(validator: string) {
-        this.success = true
-        this.message.push(
-            `${this.#validation_string} is not a valid ${validator}`
-        )
-    }
+  #response(validator: string) {
+    this.success = true
+    this.message.push(`${this.#validation_string} is not a valid ${validator}`)
+  }
 
-    validate(): Response {
-        return { message: this.message, success: this.success }
-    }
+  validate(): Response {
+    return { message: this.message, success: this.success }
+  }
 }
 
 export default (value: unknown) => new Validie(value)

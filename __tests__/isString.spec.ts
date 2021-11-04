@@ -15,12 +15,12 @@ describe('is value a string', () => {
   })
 
   it('should fail for invalid string using builder method', () => {
-    let { message, success } = valdie(20).isString().validate()
+    const { message, success } = valdie(20).isString().validate()
     expect(success).toBeTruthy()
     expect(message?.length).toEqual(1)
   })
   it('should pass for valid string in builder method', () => {
-    let { message, success } = valdie('20').isString().validate()
+    const { message, success } = valdie('20').isString().validate()
     expect(success).toBeFalsy()
     expect(message?.length).toEqual(0)
   })

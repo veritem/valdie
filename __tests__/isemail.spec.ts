@@ -9,7 +9,7 @@ describe('Test email validator', () => {
   })
 
   it('should fail', () => {
-    let email = 'emailexample.com'
+    const email = 'emailexample.com'
     const { message, success } = isEmail(email)
     expect(message).toEqual(`${email} is not valid email`)
     expect(success).toBeFalsy()
