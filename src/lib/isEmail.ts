@@ -1,4 +1,4 @@
-import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
 
 /* eslint-disable no-useless-escape */
 const emailRegex =

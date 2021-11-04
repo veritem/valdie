@@ -1,4 +1,4 @@
-import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
 
 /**
  * Check if value is accepted (true,yes,1 or on)

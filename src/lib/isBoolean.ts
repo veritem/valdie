@@ -1,4 +1,4 @@
-import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
 
 /**
  * Check if value is valid array type
@@ -17,6 +17,5 @@ export function isBoolean(value: string | boolean | number): Response {
     v === '0'
   )
     return SuccessMesage()
-  else ErrorMessage(`${value} is not valid boolean`)
-  return SuccessMesage()
+  else return ErrorMessage(`${value} is not valid boolean`)
 }

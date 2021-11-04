@@ -1,5 +1,5 @@
 import { _a } from '../utils/methods'
-import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
 /**
  * Check if value is valid array type
  * @param value value to check

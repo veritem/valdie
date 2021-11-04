@@ -1,4 +1,4 @@
-import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
 
 /* eslint-disable no-useless-escape */
 const alphaNumRegex = /^([a-zA-Z\d]+)$/i
@@ -11,8 +11,8 @@ const alphaRegex = /'^([a-zA-Z]+)$'/
  */
 export function isAlphaNum(value: string): Response {
   if (alphaRegex.test(value) || Number(value))
-    ErrorMessage(`${value} is not a valid alphaNum`) // make sure string is not alpha only or numbers only
+    return ErrorMessage(`${value} is not a valid alphaNum`) // make sure string is not alpha only or numbers only
   if (!alphaNumRegex.test(value))
-    ErrorMessage(`${value} is not a valid alphaNum`)
+    return ErrorMessage(`${value} is not a valid alphaNum`)
   return SuccessMesage()
 }
