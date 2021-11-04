@@ -15,7 +15,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "resolveJsonModule": true,
     "esModuleInterop": true 
   },
   "include": ["src/**/*"]

@@ -16,6 +16,7 @@ export { isURL } from './lib/isUrl'
 
 import { TEL_REGEX, URL_REGEX } from './utils/constants'
 import { Response } from './utils/response'
+export type { Response } from './utils/response'
 
 class Validie {
   #validation_string: any
