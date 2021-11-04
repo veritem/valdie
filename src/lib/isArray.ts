@@ -1,6 +1,5 @@
 import { _a } from '../utils/methods'
-import ErrorMessage from '../utils/Error'
-
+import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
 /**
  * Check if value is valid array type
  * @param value value to check
@@ -8,15 +7,15 @@ import ErrorMessage from '../utils/Error'
  */
 export function isArray(
   value: string | unknown[] | Record<string, unknown>
-): boolean {
+): Response {
   try {
-    if (typeof value === 'object') return _a(value)
+    if (typeof value === 'object' && _a(value)) return SuccessMesage()
 
     const testVal = JSON.parse(String(value))
-    return _a(testVal) ? true : false
+    return _a(testVal)
+      ? SuccessMesage()
+      : ErrorMessage(`${value} is not a valid array`)
   } catch (e) {
-    ErrorMessage(value, 'array')
+    return ErrorMessage(`${value} is not a valid array`)
   }
-
-  return true
 }

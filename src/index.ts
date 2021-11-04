@@ -56,4 +56,4 @@ class Validie {
   }
 }
 
-export default (value: unknown) => new Validie(value)
+export default (value: unknown): Validie => new Validie(value)

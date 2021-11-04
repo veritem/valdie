@@ -1,4 +1,4 @@
-import ErrorMessage from '../utils/Error'
+import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
 
 /* eslint-disable no-useless-escape */
 
@@ -11,16 +11,18 @@ import ErrorMessage from '../utils/Error'
 export function isAlpha(
   value: string,
   separator: string | null = null
-): boolean {
+): Response {
   let alphaRegex
 
   if (!separator) {
     alphaRegex = new RegExp('^([a-zA-Z]+)$', 'i')
-    if (!alphaRegex.test(value)) ErrorMessage(value, `alpha`)
+    if (!alphaRegex.test(value))
+      return ErrorMessage(`${value} is not a valid alpha`)
   } else {
     alphaRegex = new RegExp('^([a-zA-Z\\' + separator + ']+)$', 'i')
-    if (!alphaRegex.test(value)) ErrorMessage(value, `alpha{${separator}}`)
+    if (!alphaRegex.test(value))
+      return ErrorMessage(`${value} is not a valid alpha{${separator}}`)
   }
 
-  return true
+  return SuccessMesage()
 }

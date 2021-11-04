@@ -1,3 +1,5 @@
+import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
+
 import { isObject } from './isObject'
 
 /**
@@ -9,22 +11,23 @@ import { isObject } from './isObject'
 export function areObjectsFromSameType(
   obj1: Record<string, unknown>,
   obj2: Record<string, unknown>
-): boolean {
-  if (!isObject(obj1) && !isObject(obj2)) return false
+): Response {
+  if (!isObject(obj1).success && !isObject(obj2).success)
+    return ErrorMessage(`${obj1} is not same of type from ${obj2}`)
 
   const k1 = Object.entries(obj1)
 
   const k2 = Object.entries(obj2)
 
   if (k1.length !== k2.length) {
-    return false
+    return ErrorMessage(`${obj1} is not same of type from ${obj2}`)
   }
 
   for (const key in k1) {
     if (obj1[key] !== obj2[key]) {
-      return false
+      return ErrorMessage(`${obj1} is not same of type from ${obj2}`)
     }
   }
 
-  return true
+  return SuccessMesage()
 }

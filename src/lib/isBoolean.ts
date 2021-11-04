@@ -1,11 +1,11 @@
-import ErrorMessage from '../utils/Error'
+import { SuccessMesage, Response, ErrorMessage } from 'src/utils/response'
 
 /**
  * Check if value is valid array type
  * @param value value to check
  * @returns true if value is valid
  */
-export function isBoolean(value: string | boolean | number): boolean {
+export function isBoolean(value: string | boolean | number): Response {
   const v = '' + value
 
   if (
@@ -16,7 +16,7 @@ export function isBoolean(value: string | boolean | number): boolean {
     v === '1' ||
     v === '0'
   )
-    return true
-  else ErrorMessage(value, 'boolean')
-  return false
+    return SuccessMesage()
+  else ErrorMessage(`${value} is not valid boolean`)
+  return SuccessMesage()
 }
