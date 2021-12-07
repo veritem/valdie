@@ -1,9 +1,10 @@
 name: CI
 on: 
   schedule:
-    cron: '*/15 * * * *'
+    - cron: "20 3 * * 0"
 
 jobs:
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -13,13 +14,13 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm test
-      
+    
+  
 automerge:
     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: fastify/github-action-merge-dependabot@v1
-        if: ${{ github.actor == 'dependabot[bot]' &&
- github.event_name == 'pull_request' }}
+        if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
         with:
           github-token: ${{secrets.github_token}}
