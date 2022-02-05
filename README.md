@@ -4,11 +4,11 @@
 ![NPM Downloads](https://img.shields.io/npm/dw/valdie?style=flat-square)
 
 
-A TypeScript and JavaScript Validation Library that  works 🔨
-    - It doesn't use any libraries 🎉
-    - It's easy to use 💪
-    - It's easy to extend 📦
+A TypeScript and JavaScript Validation Library that  works
 
+ - 🎉 It doesn't have any dependancy  
+ - 💪 Simple api 
+ - 📦 It works with TypeScript
 
 
 You probably never knew you needed it but here you go.
@@ -47,35 +47,17 @@ import valdie from 'https://cdn.skypack.dev/valdie'
 import { isEmail } from "valdie"
 
 console.log(isEmail("test@test.com")) // true
+let { message,success } = isEmail("test@gmail.com")
 ```
 
 ### isInteger
 
-let { message,success } = isEmail("test@gmail.com")
 
-```
+
 
 ```javascript
 console.log(isInteger(34)) // true
 ```
-
-import validator from "valdie"
-
-let { message,success } = validator("mystring").isString().isEmail()
-```
-
-Using builder method
-
-
-```javascript
-import validator from "valdie"
-let {message,success} = valdie(20).isURL().isTel().validate()
-```
-
-## For contributors
- Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue  to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
-
- To easy the review, describe your PR. You can find the PR description templete in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md)
 
 
 ## Maintainers
