@@ -20,11 +20,11 @@ section for [Valdie][issues]. When submitting an issue please take the following
 
 ### Setting Up
 
-To setup for making changes you will need to take a few steps, we've outlined them below:
+To set up for making changes you will need to take a few steps, we've outlined them below:
 
 1. Ensure you have [node][node] and npm installed.
 
-2. Fork the [keza][keza] repository, if you are unsure how to do this GitHub has a guides for the [command line][fork-repo] and for the [GitHub Client][fork-client].
+2. Fork the [keza][keza] repository, if you are unsure how to do this GitHub has guides for the [command line][fork-repo] and for the [GitHub Client][fork-client].
 
 3. Next, run `npm install` from within the clone of your fork. That will install all dependencies necessary to build keza.
 
@@ -79,7 +79,7 @@ After you have made and tested your change, commit and push it to your fork. The
 
 ## Quickie Code Style Guide
 
-[Valdie][Valdie] adheres stricty to the [eslint airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base) style guide. Read below for a quickie style guide:
+[Valdie][Valdie] adheres strictly to the [eslint airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base) style guide. Read below for a quickie style guide:
 
 - Rely heavily on ES5 style of writing code.
 - Indentation of two spaces
