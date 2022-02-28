@@ -1,5 +1,5 @@
-import { isEmail } from '../src/index'
-import valide from '../src/index'
+import { describe, expect, it } from "vitest"
+import valide, { isEmail } from '../src/index'
 
 describe('Test email validator', () => {
   it('should susecced', () => {

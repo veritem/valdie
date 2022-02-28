@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { isArray } from '../src/index'
 
 describe('isArray', () => {

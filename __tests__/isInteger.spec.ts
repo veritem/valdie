@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { isInteger } from '../src'
 
 describe('Test for integer values', () => {
