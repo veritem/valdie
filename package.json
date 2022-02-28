@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:coverage": "vitest --coverage",
     "prepublishOnly": "tsc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "bumpp package.json --commit --push --tag"
   },
   "files": [
     "dist"
@@ -37,7 +38,6 @@
   },
   "homepage": "https://github.com/Rwanda-Coding-Academy/Valdie#readme",
   "devDependencies": {
-    "@types/jest": "27.0.3",
     "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.7.0",
     "c8": "^7.11.0",
