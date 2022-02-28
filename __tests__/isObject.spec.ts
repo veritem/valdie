@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { isObject } from '../src/index'
 
 describe('isObject', () => {

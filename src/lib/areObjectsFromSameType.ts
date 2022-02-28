@@ -1,6 +1,7 @@
-import { SuccessMesage, Response, ErrorMessage } from '../utils/response'
-
+import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 import { isObject } from './isObject'
+
+
 
 /**
  * Check if objects are of same types or are the same

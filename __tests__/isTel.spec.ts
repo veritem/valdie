@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { isTel } from '../src'
 
 describe('Test for telephone validity', () => {

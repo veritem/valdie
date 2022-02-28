@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { isBoolean } from '../src/index'
 
 describe('isBoolean', () => {

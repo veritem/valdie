@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest"
 import { areObjectsFromSameType } from '../src/index'
 
 describe('is object of the same type', () => {
