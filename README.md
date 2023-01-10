@@ -38,6 +38,7 @@ import valdie from 'https://cdn.skypack.dev/valdie'
 2. <a href="#isInteger">`isInteger`</a>
 3. <a href="#isString">`isString`</a>
 4. <a href="#isURL">`isURL`</a>
+5. <a href="#isDistinct">`isDistinct`</a>
 
 
 ### They are two ways of consuming our api
@@ -52,11 +53,19 @@ let { message,success } = isEmail("test@gmail.com")
 
 ### isInteger
 
-
-
-
 ```javascript
 console.log(isInteger(34)) // true
+```
+
+### isDistinct
+
+```js
+
+import { isDistinct } from "valdie"
+
+console.log(isDistinct(["true", "false", "yes", "no"]));  // true
+let { message,success } = isDistinct([1, 2, 3, 4, 5]);
+
 ```
 
 
