@@ -38,6 +38,7 @@ import valdie from 'https://cdn.skypack.dev/valdie'
 2. <a href="#isInteger">`isInteger`</a>
 3. <a href="#isString">`isString`</a>
 4. <a href="#isURL">`isURL`</a>
+5. <a href="#isIPv4">`isIPv4`</a>
 
 
 ### They are two ways of consuming our api
@@ -58,7 +59,24 @@ let { message,success } = isEmail("test@gmail.com")
 ```javascript
 console.log(isInteger(34)) // true
 ```
+### isIPv4
+Version 4 IP addresses (IPv4) validator 
+```ts
+import { isIPv4 } from "valdie"
 
+// sample
+console.log( isIPv4('192.168.0.3') ) // { success : true }
+console.log( isIPv4('rrtr3345') )  // { message : "rrtr3345 is not a valid IPv4" , success : false } 
+
+// usage 
+const myIp : string = "192.168.1.1"
+const  { message , success } =  isIPv4(myIp)
+
+if(success) 
+    console.log("myIp is an IPv4 address")
+else 
+    console.log("It's not an IPv4 address")
+```
 
 ## Maintainers
 
