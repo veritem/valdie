@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest"
+import { describe, expect, it } from 'vitest'
 import { isAccepted } from '../src/index'
 
 describe('isAccepted', () => {

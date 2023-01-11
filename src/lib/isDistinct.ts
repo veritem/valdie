@@ -10,23 +10,18 @@ import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
  */
 
 export function isDistinct(array: unknown[]): Response {
+  try {
+    const setForArrayValues: Set<unknown> = new Set()
 
-    try {
+    array.map(item => {
+      setForArrayValues.add(item)
+    })
 
-        let setForArrayValues:Set<unknown> = new Set();
+    //set can't contain duplicates, so if array is distinct its length must be equal to the one of its set .
+    if (array.length === setForArrayValues.size) return SuccessMesage()
 
-        array.map(item => {
-            setForArrayValues.add(item);
-        });
-    
-        //set can't contain duplicates, so if array is distinct its length must be equal to the one of its set .
-        if(array.length === setForArrayValues.size) 
-            return SuccessMesage();
-    
-        return ErrorMessage(`${array} is not distinct}`);
-
-    } catch (error) {
-        return ErrorMessage(`${array} is not distinct}`);
-    }
-
+    return ErrorMessage(`${array} is not distinct}`)
+  } catch (error) {
+    return ErrorMessage(`${array} is not distinct}`)
+  }
 }

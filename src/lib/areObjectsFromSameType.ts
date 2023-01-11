@@ -1,8 +1,6 @@
 import { ErrorMessage, Response, SuccessMesage } from '../utils/response'
 import { isObject } from './isObject'
 
-
-
 /**
  * Check if objects are of same types or are the same
  * @param obj1 object 1
