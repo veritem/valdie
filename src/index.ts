@@ -13,7 +13,9 @@ export { isObjectEmpty } from './lib/isObjectEmpty'
 export { isString } from './lib/isString'
 export { isTel } from './lib/isTel'
 export { isURL } from './lib/isUrl'
+export { isDistinct } from './lib/isDistinct'
 export { isIPv4 } from './lib/isIPv4'
+
 export type { Response } from './utils/response'
 
 import { TEL_REGEX, URL_REGEX } from './utils/constants'

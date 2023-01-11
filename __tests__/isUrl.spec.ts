@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest"
+import { describe, expect, test } from 'vitest'
 import { isURL } from '../src'
 
 describe('Test case for url validations', () => {

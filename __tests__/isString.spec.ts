@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest"
+import { describe, expect, it } from 'vitest'
 import { isString } from '../src'
 import valdie from '../src/index'
 

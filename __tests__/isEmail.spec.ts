@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest"
+import { describe, expect, it } from 'vitest'
 import valide, { isEmail } from '../src/index'
 
 describe('Test email validator', () => {
