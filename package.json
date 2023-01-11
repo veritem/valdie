@@ -59,5 +59,8 @@
     "printWidth": 80,
     "bracketSpacing": true,
     "arrowParens": "avoid"
+  },
+  "dependencies": {
+    "bumpp": "^8.2.1"
   }
 }
